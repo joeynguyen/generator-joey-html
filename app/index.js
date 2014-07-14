@@ -46,6 +46,7 @@ util.inherits(JoeyHtmlGenerator, yeoman.generators.Base);
 // };
 
 JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
+    this.copy('_gitignore', '.gitignore');
     this.copy('_package.json', 'package.json');
     this.copy('_bower.json', 'bower.json');
     this.copy('gulpfile.js', 'gulpfile.js');
