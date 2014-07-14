@@ -54,6 +54,7 @@ JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
     this.mkdir('src');
     this.mkdir('src/css');
     this.mkdir('src/js');
+    this.mkdir('src/images');
     this.directory('src/css', 'src/css');
     this.directory('src/js', 'src/js');
 
