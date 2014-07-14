@@ -47,20 +47,16 @@ util.inherits(JoeyHtmlGenerator, yeoman.generators.Base);
 
 JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
     this.copy('_package.json', 'package.json');
-    this.copy('Gruntfile.js', 'Gruntfile.js');
+    this.copy('_bower.json', 'bower.json');
+    this.copy('gulpfile.js', 'gulpfile.js');
     this.copy('index.html', 'index.html');
-  
-    this.mkdir('dest');
-    this.mkdir('dest/css');
-    this.mkdir('dest/js');
+
     this.mkdir('src');
     this.mkdir('src/css');
     this.mkdir('src/js');
     this.directory('src/css', 'src/css');
     this.directory('src/js', 'src/js');
-    this.directory('dest/css', 'dest/css');
-    this.directory('dest/js', 'dest/js');
-  
+
     if (fs.existsSync('css')) {
         ncp('css', 'src/css', function (err) {
             if (err) {
@@ -71,13 +67,13 @@ JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
     else {
         this.mkdir('css');
     }
-  
+
     if (fs.existsSync('images')) {
     }
     else {
         this.mkdir('images');
     }
-  
+
     if (fs.existsSync('js')) {
         ncp('js', 'src/js', function (err) {
             if (err) {
@@ -88,6 +84,6 @@ JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
     else {
         this.mkdir('js');
     }
-  
-    fs.symlink('../yeoman/node_modules/', 'node_modules');
+
+    fs.symlink('/Users/joeynguyen/Dropbox/Coding/yeoman/node_modules', 'node_modules');
 };

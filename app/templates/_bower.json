@@ -1,6 +1,20 @@
 {
-  "name": "package",
-  "version": "0.0.0",
-  "dependencies": {}
+    "name": "website",
+    "version": "0.0.0",
+    "homepage": "",
+    "authors": [
+        "Joey Nguyen <joey@joeynguyen.com>"
+    ],
+    "description": "website",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        // "jquery": "~2.1.1"
+    }
 }
-
