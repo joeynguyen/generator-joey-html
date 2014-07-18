@@ -87,5 +87,5 @@ JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
         this.mkdir('js');
     }
 
-    fs.symlink('/Users/joeynguyen/Dropbox/Coding/yeoman/node_modules', 'node_modules');
+    fs.symlink('/joeydata/yeoman-generators/joey-html/node_modules', 'node_modules');
 };
