@@ -51,6 +51,7 @@ JoeyHtmlGenerator.prototype.projectfiles = function projectfiles() {
     this.copy('_bower.json', 'bower.json');
     this.copy('gulpfile.js', 'gulpfile.js');
     this.copy('index.html', 'index.html');
+    this.copy('server.js', 'server.js');
 
     this.mkdir('src');
     this.mkdir('src/css');
